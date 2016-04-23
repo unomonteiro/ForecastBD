@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- parent="Theme.AppCompat.Light.DarkActionBar" -->
+    <!-- parent="android:Theme.Holo.Light" -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomButton" parent="android:Widget.Holo.Light.Button">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

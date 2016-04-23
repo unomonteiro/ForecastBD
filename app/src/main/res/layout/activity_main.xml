@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.MainActivity"
+    android:background="#01469b">
+
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_marginTop="80dp"
+        android:text="INSERT"
+        style="@style/CustomButton"/>
+
+    <Button
+        android:id="@+id/selectButton"
+        style="@style/CustomButton"
+        android:layout_below="@id/insertButton"
+        android:text="SELECT"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        style="@style/CustomButton"
+        android:layout_below="@id/selectButton"
+        android:text="UPDATE"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        style="@style/CustomButton"
+        android:layout_below="@id/updateButton"
+        android:text="DELETE"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/highTextView"
+        android:layout_below="@+id/deleteButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        tools:text="Upcoming high: 100 º"/>
+    <!--tools:text="100 º"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lowTextView"
+        android:layout_below="@+id/highTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        tools:text="Upcoming low: 10 º"/>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ForecastBD</string>
+    <string name="activity_view_forecast_title">Temperatures</string>
+</resources>
